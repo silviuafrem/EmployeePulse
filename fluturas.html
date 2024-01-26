@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeePulse</title>
+    <style>
+        /* Stilizează antetul cu un gradient de culoare */
+        header {
+            background: linear-gradient(to bottom, #0078d4, #005ea6);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adaugă o umbră sub antet */
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Importă fonta personalizată de la Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Aplică fonta personalizată la elementele dorite */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Stilizează secțiunea de conținut */
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Ajustează layout-ul pentru dispozitive mobile */
+        @media (max-width: 768px) {
+            #content {
+                flex-direction: column;
+            }
+        }
+
+        /* Stilizează butonul cu o culoare de fundal și efect de trecere */
+        button {
+            background-color: #0078d4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efect de hover pentru buton */
+        button:hover {
+            background-color: #005ea6;
+        }
+
+        /* Stilizare pentru secțiunea "Fluturaș Salariu Interactiv" */
+        #salary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Stilizare pentru secțiunea "Calendar de Concedii" */
+        #calendar {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EmployeePulse</h1>
+        <nav>
+            <ul>
+                <li><a href="home.php">Acasa</a></li>
+                <li><a href="fluturas.html">Fluturaș Salariu</a></li>
+                <li><a href="calendar.html">Calendar Concedii</a></li>
+                <li><a href="statistici.html">Statistici și Rapoarte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        /* Stilizare pentru bara de navigație */
+        header {
+            background-color: #0078d4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+    
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+    
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+    
+        nav a:hover {
+            color: #005ea6;
+        }
+    </style>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluturaș Salariu - EmployeePulse</title>
+    <style>
+        /* Stilizare pentru fluturașul de salariu */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .salary-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .salary-table th,
+        .salary-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .salary-table th {
+            background-color: #f2f2f2;
+        }
+
+        .total-row td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fluturaș Salariu - EmployeePulse</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Înapoi la Pagina Principală</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h2>Fluturaș de Salariu pentru Angajatul Popescu Sorin</h2>
+        <table class="salary-table">
+            <tr>
+                <th>Descriere</th>
+                <th>Valoare</th>
+            </tr>
+            <tr>
+                <td>Salariu Brut</td>
+                <td>7200 lei</td>
+            </tr>
+            <tr>
+                <td>Taxa pe Venit (16%)</td>
+                <td>-1152 lei</td>
+            </tr>
+            <tr>
+                <td>C.A.S. (25%)</td>
+                <td>-1800 lei</td>
+            </tr>
+            <tr>
+                <td>C.A.S. (10%)</td>
+                <td>-720 lei</td>
+            </tr>
+            <tr class="total-row">
+                <td>Salariu Net</td>
+                <td>3528 lei</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EmployeePulse. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>

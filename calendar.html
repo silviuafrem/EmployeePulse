@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeePulse</title>
+    <style>
+        /* Stilizează antetul cu un gradient de culoare */
+        header {
+            background: linear-gradient(to bottom, #0078d4, #005ea6);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adaugă o umbră sub antet */
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Importă fonta personalizată de la Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Aplică fonta personalizată la elementele dorite */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Stilizează secțiunea de conținut */
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Ajustează layout-ul pentru dispozitive mobile */
+        @media (max-width: 768px) {
+            #content {
+                flex-direction: column;
+            }
+        }
+
+        /* Stilizează butonul cu o culoare de fundal și efect de trecere */
+        button {
+            background-color: #0078d4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efect de hover pentru buton */
+        button:hover {
+            background-color: #005ea6;
+        }
+
+        /* Stilizare pentru secțiunea "Fluturaș Salariu Interactiv" */
+        #salary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Stilizare pentru secțiunea "Calendar de Concedii" */
+        #calendar {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EmployeePulse</h1>
+        <nav>
+            <ul>
+                <li><a href="home.php">Acasa</a></li>
+                <li><a href="fluturas.html">Fluturaș Salariu</a></li>
+                <li><a href="calendar.html">Calendar Concedii</a></li>
+                <li><a href="statistici.html">Statistici și Rapoarte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        /* Stilizare pentru bara de navigație */
+        header {
+            background-color: #0078d4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+    
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+    
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+    
+        nav a:hover {
+            color: #005ea6;
+        }
+    </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar de Concedii - EmployeePulse</title>
+    <style>
+        /* Stilizare pentru calendar */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .calendar-table th,
+        .calendar-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .calendar-table th {
+            background-color: #f2f2f2;
+        }
+
+        .weekend {
+            background-color: #f9f9f9;
+        }
+
+        .holiday {
+            background-color: #e6ffe6;
+        }
+
+        .leave {
+            background-color: #ffcccc;
+        }
+
+        .total-row td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calendar de Concedii - EmployeePulse</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Înapoi la Pagina Principală</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h2>Calendar de Concedii pentru luna Februarie 2024</h2>
+        <table class="calendar-table">
+            <tr>
+                <th>Luni</th>
+                <th>Marți</th>
+                <th>Miercuri</th>
+                <th>Joi</th>
+                <th>Vineri</th>
+                <th>Sâmbătă</th>
+                <th>Duminică</th>
+            </tr>
+            <tr>
+                <!-- Ziua 1 -->
+                <td></td>
+                <!-- Ziua 2 -->
+                <td></td>
+                <!-- Ziua 3 -->
+                <td></td>
+                <!-- Ziua 4 -->
+                <td class="leave">1</td>
+                <!-- Ziua 5 -->
+                <td class="leave">2</td>
+                <!-- Ziua 6 -->
+                <td class="weekend">3</td>
+                <!-- Ziua 7 -->
+                <td class="weekend">4</td>
+            </tr>
+            <tr>
+                <!-- Ziua 8 -->
+                <td class="leave">5</td>
+                <!-- Ziua 9 -->
+                <td class="leave">6</td>
+                <!-- Ziua 10 -->
+                <td class="leave">7</td>
+                <!-- Ziua 11 -->
+                <td class="leave">8</td>
+                <!-- Ziua 12 -->
+                <td class="leave">9</td>
+                <!-- Ziua 13 -->
+                <td class="weekend">10</td>
+                <!-- Ziua 14 -->
+                <td class="weekend">11</td>
+            </tr>
+            <tr>
+                <!-- Ziua 15 -->
+                <td class="leave">12</td>
+                <!-- Ziua 16 -->
+                <td class="leave">13</td>
+                <!-- Ziua 17 -->
+                <td class="leave">14</td>
+                <!-- Ziua 18 -->
+                <td class="leave">15</td>
+                <!-- Ziua 19 -->
+                <td class="leave">16</td>
+                <!-- Ziua 20 -->
+                <td class="weekend">17</td>
+                <!-- Ziua 21 -->
+                <td class="weekend">18</td>
+            </tr>
+            <tr>
+                <!-- Ziua 22 -->
+                <td class="holiday">19</td>
+                <!-- Ziua 23 -->
+                <td class="holiday">20</td>
+                <!-- Ziua 24 -->
+                <td class="holiday">21</td>
+                <!-- Ziua 25 -->
+                <td class="leave">22</td>
+                <!-- Ziua 26 -->
+                <td class="leave">23</td>
+                <!-- Ziua 27 -->
+                <td class="weekend">24</td>
+                <!-- Ziua 28 -->
+                <td class="weekend">25</td>
+            </tr>
+            <tr>
+                <!-- Ziua 29 -->
+                <td class="leave">26</td>
+                <!-- Ziua 30 -->
+                <td class="leave">27</td>
+                <!-- Ziua 31 -->
+                <td></td> </tr>
+            
+                <!-- Rest zile concediu: 9 -->
+                <td class="total-row" colspan="2">Rest zile concediu: 9</td>
+            </tr>
+        </table>
+    </section>
+
+</section>
+
+<section id="holidays">
+    <h2>Zile de Concediu Legal de la Stat</h2>
+    <ul>
+        <li>1 ianuarie - Anul Nou</li>
+        <li>24 ianuarie - Ziua Unirii Principatelor Române</li>
+        <li>1 și 2 mai - Ziua Muncii</li>
+        <li>15 august - Adormirea Maicii Domnului</li>
+        <li>30 noiembrie - Sfântul Andrei</li>
+        <li>1 decembrie - Ziua Națională a României</li>
+        <li>25 și 26 decembrie - Crăciunul</li>
+        <!-- Puteți adăuga și alte zile legale aici -->
+    </ul>
+</section>
+
+<!-- ... Alte conținuturi existente ... -->
+<style>/* Stilizare pentru secțiunea cu zilele de concediu legal */
+#holidays {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#holidays h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+#holidays ul {
+    list-style: none;
+    padding: 0;
+}
+
+#holidays li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Icon pentru marcajele de listă (folosind FontAwesome, dar puteți alege altă bibliotecă sau crea propriile icon-uri) */
+#holidays li::before {
+    content: "\f058"; /* Codul pentru un icon de stea (exemplu FontAwesome) */
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    color: #0078d4;
+}
+</style>
+
+    <footer>
+        <p>&copy; 2024 EmployeePulse. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
